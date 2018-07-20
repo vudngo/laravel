@@ -25,6 +25,9 @@ class SentryContext
             } else {
                 $sentry->user_context(['id' => null]);
             }
+
+            // Setting tag
+            $sentry->tags_context(['customerType' => 'enterprise']);
         }
 
         return $next($request);
