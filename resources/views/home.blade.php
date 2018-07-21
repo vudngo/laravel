@@ -16,7 +16,11 @@
         </form>--}} {{--
     </div>--}}
 
-    <h2>Hi, {{Auth::user()->email}}.</h2>
+    @if (Auth::check())
+        <h2>Hi, {{Auth::user()->email}}.</h2>
+    @else
+        <h2>Hi, guest.</h2>
+    @endif
 
     <ul class="center list-group">
         <li class="list-group-item list-group-item-danger">
@@ -63,23 +67,5 @@
         </li>
 
     </ul>
-
-
-    <!-- <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-                {{ Auth::user()->email }}
-
-                <div class="card-body">
-                    @if (session('status'))
-                    <div class="alert alert-success" role="alert">
-                        {{ session('status') }}
-                    </div>
-                    @endif You are logged in!
-                </div>
-            </div>
-        </div>
-    </div> -->
 </div>
 @endsection
