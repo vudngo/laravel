@@ -28,6 +28,9 @@ class SentryContext
 
             // Setting tag
             $sentry->tags_context(['customerType' => 'enterprise']);
+
+            $commitHash = trim(exec('git rev-parse HEAD'));
+            $sentry->setRelease($commitHash);
         }
 
         return $next($request);
