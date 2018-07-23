@@ -35,6 +35,10 @@ Route::get('/invalidfunction', function () {
     invalidFunction();
 });
 
+Route::get('/newerror', function () {
+    newerror();
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

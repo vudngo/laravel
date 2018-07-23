@@ -6,15 +6,7 @@
         <img src="img/sentry-glyph-black.png" alt="logo" class="App-logo">
         <h1>Sentry.io - Sample Error Page</h1>
     </div>
-    <br> {{--
-
-    <div class="center form-group">--}} {{--
-        <form action="/" method="get" class="form-group">--}} {{--
-            <!--{% csrf_token %}-->--}} {{--
-            <input id="email" type="email" name="email" class="form-control" placeholder="Enter email">--}} {{--
-            <button type="submit" class="btn btn-primary">Submit</button>--}} {{--
-        </form>--}} {{--
-    </div>--}}
+    <br>
 
     @if (Auth::check())
         <h2>Hi, {{Auth::user()->email}}.</h2>
@@ -22,6 +14,7 @@
         <h2>Hi, guest.</h2>
     @endif
 
+    <!-- PHP Errors -->
     <ul class="center list-group">
         <li class="list-group-item list-group-item-danger">
             <h3>PHP/Laravel Errors</h3>
@@ -57,6 +50,7 @@
         </li>
     </ul>
 
+    <!-- JS Errors -->
     <ul class="center list-group">
         <li class="list-group-item list-group-item-danger">
                 <h3>JavaScript Errors</h3>
