@@ -3,7 +3,7 @@
 #  SENTRY_AUTH_TOKEN
 
 SENTRY_ORG=testorg-az
-SENTRY_PROJECT=sentry-demos-laravel
+SENTRY_PROJECT=laracondemo2018
 VERSION=`sentry-cli releases propose-version`
 
 setup_release: create_release associate_commits serve
