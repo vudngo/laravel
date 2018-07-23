@@ -16,7 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('/undefined_variable', function () {
-    $abc = 123;
     $x = $abc;
 });
 
