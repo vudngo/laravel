@@ -14,7 +14,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <script src="https://cdn.ravenjs.com/3.22.1/raven.min.js" crossorigin="anonymous"></script>
-    <script>Raven.config('https://42336261ed494ace84f3de3b4e90983e@sentry.io/260278').install()</script>
+    <script>Raven.config('https://765d075b423045ec88d44b387ae4c72e@sentry.io/1248558').install()</script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
